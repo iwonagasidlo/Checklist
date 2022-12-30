@@ -8,5 +8,37 @@ html {
 
 body {
     font-family: 'Open Sans', sans-serif;
+    background-color: #eee;
+    display: grid;
+    justify-content: center;
 }
 
+.header {
+    margin-left: 10px;
+}
+
+.form__field {
+    width: 900px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 5px 0px #D1CFCF;
+    padding: 20px;
+    margin: 10px; 
+}
+
+.form__input {
+    width: 700px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.form__button {
+    background-color: teal;
+    color: white;
+    padding: 10px;
+    border: none;
+}
+
+.form__subHeader {
+    margin: 10px;
+}
