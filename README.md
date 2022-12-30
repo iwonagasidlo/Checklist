@@ -2,7 +2,7 @@
 
 Welcome to my page, where you can do a simple to-do list! **This project is in polish.**
 
-![Checklista](https://user-images.githubusercontent.com/121032802/210097080-75b37cd4-8bd7-4787-b398-581b7af9177d.png)
+![Checklista](https://user-images.githubusercontent.com/121032802/210098752-649c2e5b-a7d6-49c6-9df4-f7afc8e5b9af.jpeg)
 
 ## Demo
 https://iwonagasidlo.github.io/Checklist/
