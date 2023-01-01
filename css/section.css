@@ -1,22 +1,20 @@
 .header {
-    margin-left: 10px;
+    margin-left: 12px;
 }
 
 .section__field {
-    width: 900px;
-    min-height: 150px;
     background-color: white;
     border: 1px solid #ccc;
     box-shadow: 0px 0px 5px 0px #D1CFCF;
-    margin: 10px;
-}
-
-.section__body {
-    padding: 20px;
+    margin: 10px 0;
 }
 
 .section__header {
     margin: 0;
     padding: 20px;
     border-bottom: 1px solid #ddd;
+}
+
+.section__body {
+    padding: 20px;
 }
