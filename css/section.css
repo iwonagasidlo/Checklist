@@ -3,7 +3,7 @@
 }
 
 .section__field {
-    max-width: 900px;
+    width: 900px;
     min-height: 150px;
     background-color: white;
     border: 1px solid #ccc;
