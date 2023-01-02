@@ -24,25 +24,25 @@
 }
 
 .tasks__button--done {
-    background-color: rgb(38, 157, 38);
+    background-color: hsl(120, 61%, 38%);
 }
 
 .tasks__button--done:hover {
-    background-color: rgb(38, 157, 45);
+    background-color: hsl(124, 61%, 45%);
 }
 
 .tasks__button--done:active {
-    background-color: rgb(38, 157, 50);
+    background-color: hsl(126, 61%, 52%)
 }
 
 .tasks__button--remove {
-    background-color: rgb(225, 52, 52);
+    background-color: hsl(0, 74%, 54%);
 }
 
 .tasks__button--remove:hover {
-    background-color: rgb(225, 52, 60);
+    background-color: hsl(357, 74%, 62%);
 }
 
 .tasks__button--remove:active {
-    background-color: rgb(225, 52, 65);
+    background-color: hsl(355, 74%, 70%);
 }
