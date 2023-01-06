@@ -32,15 +32,19 @@
             </form>
         </section>
         <section class="section__field">
-            <h2 class="section__header">Lista zadań</h2>
-            <form class="form js-form">
-                <ul class="tasks js-tasks">
-                    <li class="task__item task__item--done js-task">
-                        <button class="tasks__button tasks__button--done js-done">✔</button>
-                        <span class="tasks__content tasks__content--done"></span>
-                        <button class="tasks__button tasks__button--remove js-remove">🗑️</button>
-                    </li>
-                </ul>
+            <form class="form js-form"> 
+            <div class="section__headerField">
+                <h2 class="section__header">Lista zadań</h2>
+                <button class="section__headerButtons">Ukryj ukończone zadania</button>
+                <button class="section__headerButtons">Oznacz wszystkie jako ukończone</button>
+            </div>
+            <ul class="tasks js-tasks">
+                <li class="task__item task__item--done js-task">
+                    <button class="tasks__button tasks__button--done js-done">✔</button>
+                    <span class="tasks__content tasks__content--done"></span>
+                    <button class="tasks__button tasks__button--remove js-remove">🗑️</button>
+                </li>
+            </ul>
             </form>
         </section>
     </div>

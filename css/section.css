@@ -14,3 +14,18 @@
     padding: 20px;
     border-bottom: 1px solid #ddd;
 }
+
+.section__headerButtons {
+    border: none;
+    background-color: white;
+    color: hsl(180, 100%, 25%);
+    text-align: end;
+}
+
+.section__headerButtons:hover {
+    color: hsl(180, 100%, 35%);;
+}
+
+.section__headerButtons:active {
+    color: hsl(180, 100%, 40%);;
+}
