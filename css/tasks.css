@@ -46,3 +46,28 @@
 .tasks__button--remove:active {
     background-color: hsl(355, 74%, 70%);
 }
+
+.tasks__item {
+    border: none;
+    background-color: white;
+    color: hsl(180, 100%, 25%);
+    text-align: end;
+}
+
+.tasks__item:hover {
+    color: hsl(180, 100%, 35%);
+    ;
+}
+
+.tasks__item:active {
+    color: hsl(180, 100%, 40%);
+    ;
+}
+
+.tasks__item--hidden {
+    display: none;
+}
+
+.tasks__item--done {
+    text-decoration: line-through;
+}

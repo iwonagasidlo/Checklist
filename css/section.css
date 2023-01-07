@@ -15,17 +15,17 @@
     border-bottom: 1px solid #ddd;
 }
 
-.section__headerButtons {
+.tasks__item {
     border: none;
     background-color: white;
     color: hsl(180, 100%, 25%);
     text-align: end;
 }
 
-.section__headerButtons:hover {
+.tasks__item:hover {
     color: hsl(180, 100%, 35%);;
 }
 
-.section__headerButtons:active {
+.tasks__item:active {
     color: hsl(180, 100%, 40%);;
 }
