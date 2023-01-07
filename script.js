@@ -32,6 +32,20 @@
         render();
     };
 
+    const markAllTasksDone = () => {
+        tasks = tasks.map((task) => ({
+            ...task,
+            done: true,
+        }));
+
+        render();
+    };
+
+    const toggleHideDoneTasks = () => {
+        hideDoneTasks = !hideDoneTasks;
+        render();
+    };
+
     const bindEvents = () => {
         const removeButtons = document.querySelectorAll(".js-remove");
 
@@ -41,20 +55,21 @@
             });
         });
 
-        const toggleDoneButtons = document.querySelectorAll(".js-done");
+        const bindToggleDoneEvents = () => {
+            const toggleDoneButtons = document.querySelectorAll(".js-done");
 
-        toggleDoneButtons.forEach((toggleDoneButton, index) => {
-            toggleDoneButton.addEventListener("click", () => {
-                toggleTaskDone(index);
+            toggleDoneButtons.forEach((toggleDoneButton, index) => {
+                toggleDoneButton.addEventListener("click", () => {
+                    toggleTaskDone(index);
+                });
             });
-        });
-    };
+        };
 
-    const render = () => {
-        let htmlString = "";
+        const render = () => {
+            let htmlString = "";
 
-        for (const task of tasks) {
-            htmlString += `
+            for (const task of tasks) {
+                htmlString += `
             <li class="task__item js-task">
                 <button 
                 class="tasks__button tasks__button--done js-done">
@@ -67,36 +82,36 @@
                 class="tasks__button tasks__button--remove js-remove">🗑</button>
             </li>
             `;
-        }
+            }
 
-        document.querySelector(".js-tasks").innerHTML = htmlString;
+            document.querySelector(".js-tasks").innerHTML = htmlString;
 
-        bindEvents();
-    };
+            bindEvents();
+        };
 
-    const onFormSubmit = (event) => {
-        event.preventDefault();
+        const onFormSubmit = (event) => {
+            event.preventDefault();
 
-        const newTaskElement = document.querySelector(".js-newTask")
-        const newTaskContent = newTaskElement.value.trim();
+            const newTaskElement = document.querySelector(".js-newTask")
+            const newTaskContent = newTaskElement.value.trim();
 
-        if (newTaskContent !== "") {
-            addNewTask(newTaskContent);
-            newTaskElement.value = "";
-        }
+            if (newTaskContent !== "") {
+                addNewTask(newTaskContent);
+                newTaskElement.value = "";
+            }
 
-        newTaskElement.focus();
-    };
+            newTaskElement.focus();
+        };
 
-    const init = () => {
-        render();
+        const init = () => {
+            render();
 
-        const form = document.querySelector(".js-form");
+            const form = document.querySelector(".js-form");
 
-        form.addEventListener("submit", onFormSubmit);
+            form.addEventListener("submit", onFormSubmit);
 
-        welcome();
-    };
+            welcome();
+        };
 
-    init();
-}
+        init();
+    }
