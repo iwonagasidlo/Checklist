@@ -64,9 +64,10 @@
                 });
             });
         };
+    }
 
-        const renderTasks = () => {
-            const taskToHTML = task => `
+    const renderTasks = () => {
+        const taskToHTML = task => `
             <li class="
             task__item${task.done && hideDoneTasks ? " tasks__item--hidden" : ""} js-task
             ">
@@ -82,13 +83,49 @@
             </li>
             `;
 
-            const tasksElement = document.querySelector(".js-task");
-            tasksElement.innerHTML = tasks.map(taskToHTML).join("");
-        };
+        const tasksElement = document.querySelector(".js-task");
+        tasksElement.innerHTML = tasks.map(taskToHTML).join("");
+    };
 
-        document.querySelector(".js-task").innerHTML = htmlString;
+    const renderButtons = () => {
+        const buttonsElement = document.querySelector(".js-buttons");
 
-        bindEvents();
+        if (!tasks.length) {
+            buttonsElement.innerHTML = "";
+            return;
+        }
+
+        buttonsElement.innerHTML = `
+            <button class="buttons__button js-toggleHideDoneTasks">
+                ${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
+            </button>
+            <button class="buttons__button" js-markAllDone"
+            ${tasks.every(({ done }) => done) ? " disabled" : ""}> ukończ wszystkie
+            </button>
+            `;
+    };
+
+
+    const bindButtonEvents = () => {
+        const markAllDoneButton = document.querySelector(".js-markAllDone");
+
+        if (markAllDoneButton) {
+            markAllDoneButton.addEventListener("click", markAllTasksDone);
+        }
+        const toggleHideDoneTasksButton = document.querySelector(".js-toggleHideDoneTasks");
+
+        if (toggleHideDoneTasksButton) {
+            toggleHideDoneTasksButton.addEventListener("click", toggleHideDoneTasks);
+        }
+    };
+
+    const render = () => {
+        renderTasks();
+        bindRemoveEvents();
+        bindToggleDoneEvents();
+
+        renderButtons();
+        bindButtonEvents();
     };
 
     const onFormSubmit = (event) => {
@@ -109,7 +146,6 @@
         render();
 
         const form = document.querySelector(".js-form");
-
         form.addEventListener("submit", onFormSubmit);
 
         welcome();
