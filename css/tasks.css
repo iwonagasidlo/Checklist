@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-.task__item {
+.tasks__item {
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
@@ -23,15 +23,15 @@
     border: none;
 }
 
-.tasks__button--done {
+.tasks__button--toggleDone {
     background-color: hsl(120, 61%, 38%);
 }
 
-.tasks__button--done:hover {
+.tasks__button--toggleDone:hover {
     background-color: hsl(124, 61%, 45%);
 }
 
-.tasks__button--done:active {
+.tasks__button--toggleDone:active {
     background-color: hsl(126, 61%, 52%)
 }
 
@@ -47,27 +47,6 @@
     background-color: hsl(355, 74%, 70%);
 }
 
-.tasks__item {
-    border: none;
-    background-color: white;
-    color: hsl(180, 100%, 25%);
-    text-align: end;
-}
-
-.tasks__item:hover {
-    color: hsl(180, 100%, 35%);
-    ;
-}
-
-.tasks__item:active {
-    color: hsl(180, 100%, 40%);
-    ;
-}
-
 .tasks__item--hidden {
     display: none;
-}
-
-.tasks__item--done {
-    text-decoration: line-through;
 }

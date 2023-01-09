@@ -11,9 +11,3 @@ body {
     background-color: #eee;
     word-break: break-word;
 }
-
-.container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-}
