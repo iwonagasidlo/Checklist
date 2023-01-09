@@ -12,7 +12,7 @@ On this page there is a form, that will help you to do a checklist with tasks yo
 
 
 ## How does it work?
-You need to put a task in the field and click the button on the right side. You can add multiple tasks to your to-do list. Your added tasks will show up in the list below. You can mark them as done or remove from the list. Also, you can use the buttons: "Ukryj ukończone" and "Ukończ wszystkie". The first one hides tasks that were marked as done and shows them when you click the button again. The second one marks all tasks as done. **Enjoy making your list
+You need to put a task in the field and click the button on the right side. You can add multiple tasks to your to-do list. Your added tasks will show up in the list below. You can mark them as done or remove from the list. Also, you can use the buttons: "Ukryj ukończone" and "Ukończ wszystkie". The first one hides tasks that were marked as done and shows them when you click the button again. The second one marks all tasks as done. ** Enjoy making your list! **
 **
 
 ## Technologies used in this project:
