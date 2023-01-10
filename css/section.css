@@ -44,7 +44,7 @@
     color: hsl(180, 100%, 25%);
     border: none;
     margin-left: 20px;
-    transition: 0.5s;
+    transition: color 0.5s;
 }
 
 @media (max-width: 767px) {
@@ -56,12 +56,10 @@
 
 .buttons__button:hover {
     color: hsl(180, 100%, 35%);
-    transform: scale(1.1);
 }
 
 .buttons__button:active {
     color: hsl(180, 100%, 40%);
-    ;
 }
 
 .buttons__button:disabled {

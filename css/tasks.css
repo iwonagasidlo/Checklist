@@ -29,10 +29,12 @@
 
 .tasks__button--toggleDone:hover {
     background-color: hsl(124, 61%, 45%);
+    transition: 0.5s;
 }
 
 .tasks__button--toggleDone:active {
-    background-color: hsl(126, 61%, 52%)
+    background-color: hsl(126, 61%, 52%);
+    transition: 0.5s;
 }
 
 .tasks__button--remove {
@@ -41,10 +43,12 @@
 
 .tasks__button--remove:hover {
     background-color: hsl(357, 74%, 62%);
+    transition: 0.5s;
 }
 
 .tasks__button--remove:active {
     background-color: hsl(355, 74%, 70%);
+    transition: 0.5s;
 }
 
 .tasks__item--hidden {
